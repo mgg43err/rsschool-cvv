@@ -2,51 +2,166 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>My Resume</title>
 </head>
 
+<body>
+    <header>
+        <h1>Andrey Pleskunou CV</h1>
+        <img src="./POfK0W47zRo.jpg" alt="My photo have to be here!" height="150" width="120">
+        <h2><b>Andrey Pleskunou</b></h2>
+    </header>
+    
 <main>
 
-    <img src="./POfK0W47zRo.jpg" alt="My photo should be here!">
+    
 
-    <h3><b>Andrey Pleskunou</b></h3>
+    <article>
+        <h4>About myself:</h4>
+        <p>I am a full-time student at the Faculty of Biology, BSU. I am 20 years old. This is my last year at university.</p>
+    </article>
 
-    <p>+375256419982, mgg43er@gmail.com,
-        <a href="https://www.linkedin.com/in/andrey-pleskunou-41a929186/">https://www.linkedin.com/in/andrey-pleskunou-41a929186/</a>
-    </p>
 
-    <p>My goal is to get a job offer in epam and find myself in web development.</p>
 
-    <p>Learn ultra fast.</p>
+    <article>
+        <h4>Personal information:</h4>
+        <ul> 
+            <li><a href="tel:+375256419982">+375256419982</a></li>
+            <li><a href="mailto:mgg43er@gmail.com">mgg43er@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/andrey-pleskunou-41a929186/">https://www.linkedin.com/in/andrey-pleskunou-41a929186/</a></li>
+        </ul>
 
-    <p>Javascript, HTML/CSS, vim/vscode, Python 3.6 , bash, git. </p>
+    </article>
+    
+    <article>
+        <h4>Goal:</h4>
+        <p>My goal is to get a job offer in epam and find myself in web-development.</p>
+        <p>I am learning web-development with good speed and that inspire myself.</p>
+    </article>
+
+    <article>
+        <h4>Skills:</h4>
+        <ul>
+            <li>Javascript</li>
+            <li>HTML/CSS</li>
+            <li>SASS/SCSS</li>
+            <li>VScode</li>
+            <li>Python</li>
+            <li>Bash</li>
+            <li>Git</li>
+        </ul>
+    </article>
+    
+
+<article>
+    <h4>
+        Example slice of code:
+    </h4>
+</article>
 
     <aside>
-        <p>Example of code</p>
-        <pre><code>
-function isPrime (num) { 
-let max = Math.sqrt(num); 
-    for (let i = 2 ; i &lt;= max; i++) {
-		    if (num % i === 0) {
-				return false;
-				}
-			}
-		return num > 1;
-}
-</code></pre></aside>
-	
-	<a href = "https://rolling-scopes-school.github.io/mgg43err-JS2020Q3/webdev/" >
-</a>
-    <p>Experience with js in this Rolling Scopes course.</p>
-    <p>Passed the autotests of this course, and also completed the tasks on codewars.</p>
-    <p>Also I had experience with js on Hexlet and Stepik platforms.</p>
-    <p>English level: i can speak and write with rare mistakes also</p>
-    <p>have a good listening understanding. I can read technical text with a dictionary.</p>
+
+        <pre><code class="javascript">
+class Calculator {
+    constructor(previousOperandTextElement, currentOperandTextElement) {
+        this.previousOperandTextElement = previousOperandTextElement;
+        this.currentOperandTextElement = currentOperandTextElement;
+        this.readyToReset = false;
+        this.clear();
+    compute() {
+        let computation;
+        const prev = parseFloat(this.previousOperand);
+        const current = parseFloat(this.currentOperand);
+        switch (this.operation) {
+            case '-NUM':
+                computation = prev * -1;
+                break
+            case '+':
+                computation = (prev + current).toFixed(10);
+                break
+            case '-':
+                computation = (prev - current).toFixed(10);
+                break
+            case '*':
+                computation = (prev * current).toFixed(10);
+                break
+            case '÷':
+                computation = (prev / current).toFixed(10);
+                break
+            case '√':
+
+                computation = (prev ** 0.5).toFixed(10);
+                break
+            case 'xy':
+                computation = (prev ** current).toFixed(10);
+                break
+            case '(':
+                computation = prev + '(';
+                break
+            case ')':
+                computation = prev + ')';
+                break
+            default:
+                return;
+        }
+
+        this.readyToReset = true;
+        this.currentOperand = computation;
+        this.operation = undefined;
+        /*  this.previousOperand = ''; */
+    }
+    getDisplayNumber(number) {
+        const stringNumber = number.toString()
+        const integerDigits = parseFloat(stringNumber.split('.')[0])
+        const decimalDigits = stringNumber.split('.')[1]
+        let integerDisplay
+        if (isNaN(integerDigits)) {
+            integerDisplay = ''
+        } else {
+            integerDisplay = integerDigits.toLocaleString('en', { maximumFractionDigits: 0 })
+        }
+        if (decimalDigits != null) {
+            return `${integerDisplay}.${decimalDigits}`
+        } else {
+            return integerDisplay
+        }
+    }
+        </code></pre>
+
+        
+    </aside>
+
+	<article>
+        <h4>
+        Example of project:
+        </h4>
+        <a href="https://determined-franklin-2237ca.netlify.app/">Momentum</a> 
+    </article>
+    <article>
+        <h4>Experience:</h4>
+        <p>Experience with js in this Rolling Scopes course.
+        I passed the autotests of this course, and also completed the tasks on codewars.
+        Also i had experience with Javascript on Hexlet and Stepik platforms.</p>
+    </article>
+    
+    <article>
+        <h4>English level:</h4>
+        <p>I can speak and write with rare mistakes also have a good listening understanding. I can read technical text with a dictionary.Probably intermediate(B1).</p>
+    </article>
+    
+    
 
 </main>
+
+<footer>
+    <p>Thanks to your attention!</p>
+</footer>
 
 </body>
 
