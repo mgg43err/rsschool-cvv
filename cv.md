@@ -5,8 +5,9 @@
 My goal is to get a job offer in epam and find myself in web development. 
 			
 Learn ultra fast. 
-			
-Javascript, HTML/CSS, vim/vscode, Python 3.6 , bash,  git. 
+### Skills 			
+Javascript, HTML5,CSS3,SCSS/SASS, vim, vscode, Python 3.6 , bash,  git. 
+
 ```javascript
 function isPrime(num) {
 let max = Math.sqrt(num);
@@ -19,10 +20,10 @@ let max = Math.sqrt(num);
 }
 ```
      
-Experience with js in this Rolling Scopes course.
+Experience with javascript in this Rolling Scopes course.
 Passed the autotests of this course, and also completed the tasks on codewars.
 			
-Also I had experience with js on Hexlet and Stepik platforms.
+Also I had experience with javascript on Hexlet and Stepik platforms.
 			
 English level: i can speak and write with rare mistakes also have a good listening understanding.
-I can read technical text with a dictionary.
+I can read technical text with a dictionary. Probably intermediate.
