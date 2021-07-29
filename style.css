@@ -1,0 +1,66 @@
+.img {
+	/* Ширина и высота */
+	border-radius: 50%; /* Превращаем в круг */
+	background: url(./POfK0W47zR.jpg) no-repeat -70px 0; /* Параметры фона */
+	background-size: auto 300px; /* Высота фотографии равна высоте элемента */
+}
+h1 {
+	display: none;
+}
+a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #000;
+	font-weight: 300;
+}
+a:hover {
+	text-decoration: underline;
+}
+ul {
+}
+li {
+	list-style-type: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+code {
+	font-size: large;
+	font-weight: 500;
+	margin-left: 40px;
+}
+
+pre {
+	display: block;
+	/* font-family: monospace; */
+	white-space: pre;
+	margin: 1em 0;
+}
+
+p {
+	size: 24px;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(203, 234, 255);
+	margin-left: auto;
+	margin-right: auto;
+	text-emphasis: none;
+	text-decoration: double;
+	text-transform: initial;
+	text-size-adjust: 12;
+	margin-left: 150px;
+	margin-right: 150px;
+	font-size: 25px;
+}
+
+p {
+	font-size: 18px;
+	font-family: monospace, cursive;
+}
+ul {
+	font-size: 22px;
+}
+
+footer {
+	display: none;
+}
